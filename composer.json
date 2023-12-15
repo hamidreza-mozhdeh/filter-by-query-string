@@ -3,7 +3,7 @@
     "description": "Filter Laravel Eloquent results by URL query strings and Eloqunet's scopes.",
     "type": "library",
     "require": {
-        "php": ">=8.0"
+        "php": "^8.0"
     },
     "autoload": {
         "psr-4": {
