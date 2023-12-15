@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Traits\Filterable;
+namespace HamidrezaMozhdeh\FilterByQueryString\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Http\FormRequest;
