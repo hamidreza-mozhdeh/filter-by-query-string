@@ -49,8 +49,7 @@ class CategoryRequest extends FormRequest
              
             // Or Indexed example
             'date-between' => ['sometimes', 'array'], // A filter with two values
-            'date-between.0' => ['sometimes', 'date'], // Indexed array
-            'date-between.1' => ['sometimes', 'date'], // Indexed array
+            'date-between.*' => ['sometimes', 'date'], // Indexed array
         ];
     }
 }
@@ -75,14 +74,14 @@ trait CategoryScopesTrait
 - To filter the categories' names for example `ossw` use: <br>
   `http://0.0.0.0/api/categories?name=ossw`
 - To filter with dates use: <br>
-`http://0.0.0.0/api/categories?date-between[]=2023-11-23&date-between[]=2023-11-25` <br>
-  `http://0.0.0.0/api/categories?date-between[from]=2023-11-23&date-between[to]=2023-11-25`
+Indexed array: `http://0.0.0.0/api/categories?date-between[]=2023-11-23&date-between[]=2023-11-25` <br>
+  Associative array: `http://0.0.0.0/api/categories?date-between[from]=2023-11-23&date-between[to]=2023-11-25`
 ## Customization
 ```
   $categories = Category::filter(
     request: $request,
-    only: ['name'], // Only accept these two scopes.
-    except: ['date-between'], // Do not accept the `scopeStatus` method.
+    only: ['name'], // Only accept this filter.
+    except: ['date-between'], // Do not accept the `date-between` method.
     prefix: 'filters', // Add `filters` as array prefix.
     requestMethod: 'input' // The default get method is validated but you can choose different one.
   );
