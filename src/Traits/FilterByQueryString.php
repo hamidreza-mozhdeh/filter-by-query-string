@@ -8,6 +8,16 @@ use Illuminate\Support\Str;
 
 trait FilterByQueryString
 {
+    /**
+     * @method filter()
+     * @param Builder $query
+     * @param FormRequest $request It's better to define a specific FormRequest for each action.
+     * @param array $only Only accept a list of methods that has scopes.
+     * @param array $except Accept all scopes from URL query string except these list of methods.
+     * @param string|null $prefix The prefix of filters. Default is null.
+     * @param string $requestMethod The method of validation. the default method of validation is 'Validated'.
+     * @return Builder
+     */
     public function scopeFilter(
         Builder $query,
         FormRequest $request,

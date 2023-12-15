@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b80332effe502c07cffdc0cc25c72814f9b6c0a6',
+        'reference' => '972516947802fa9e249a3762ad8db34cd65a76bf',
         'name' => 'hamidreza-mozhdeh/filter-by-query-string',
         'dev' => true,
     ),
@@ -106,7 +106,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b80332effe502c07cffdc0cc25c72814f9b6c0a6',
+            'reference' => '972516947802fa9e249a3762ad8db34cd65a76bf',
             'dev_requirement' => false,
         ),
         'illuminate/auth' => array(
@@ -496,8 +496,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
