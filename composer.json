@@ -1,0 +1,20 @@
+{
+    "name": "hamidreza-mozhdeh/filter-by-query-string",
+    "description": "Filter Eloquent results by URL query strings and Eloqunet's scopes.",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HamidrezaMozhdeh\\FilterByQueryString\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hamidreza Mozhdeh",
+            "email": "hamidreza87m@gmail.com"
+        }
+    ]
+}
