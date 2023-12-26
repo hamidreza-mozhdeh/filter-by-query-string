@@ -1,14 +1,16 @@
 # Make Laravel Eloquent Filterable by URL query strings
 
+<h2 align="center">Please give me a star if you like it.</h2>
+
 ## About Filter by query string
-With this package you can simply use Eloquent scopes to filter the model result by using URL query strings.
+With this package, you can simply use Eloquent scopes to filter the model result by using URL query strings. The <strong>advantage of this repository is that you can reuse your scopes in your business logic (Controllers, Services, etc).
 - It's safe
 - Reusable scopes
 - Easy to implement
 - Customizable
 
 ## How to install
-Simply run `composer require hamidreza-mozhdeh/filter-by-query-string`. It will add a `FilterByQueryString` trait to your project.
+Run `composer require hamidreza-mozhdeh/filter-by-query-string`. It will add a `FilterByQueryString` trait to your project.
 
 ## How to use
 - Add the trait to your models `use FilterByQueryString;`.
