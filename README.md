@@ -25,7 +25,7 @@ Run `composer require hamidreza-mozhdeh/filter-by-query-string`. It will add a `
 - In your controller simply pass the Form Request to the Model:
   - Example: `$categories = Category::filter($request);`
   - Please note you have to type hint the `Request` class.
-  - #### Important: First of all is better to have a From Request for each your actions or methods (optional).
+  - #### Important: First of all is better to have a From Request for each of your actions or methods (optional). If not, you have to change `requestMethod` to `input` which is not recommended.
 ### CategoryController:
 ```
 class CategoryController extends Controller
