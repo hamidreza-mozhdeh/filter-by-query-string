@@ -40,7 +40,7 @@ trait FilterByQueryString
                 continue;
             }
 
-            $method = Str::camel("scope{$key}");
+            $method = Str::camel("scope-{$key}");
             if (! method_exists($this, $method)) {
                 continue;
             }
