@@ -32,7 +32,7 @@ class CategoryController extends Controller
 {
     public function index(CategoryRequest $request)
     {
-        return Category::filter($request);
+        return Category::filter($request)->get();
     }
 ```
 ### CategoryRequest:
